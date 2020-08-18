@@ -1,0 +1,16 @@
+
+Function job_characteristics_skills_input ( vector of characteristics, vector of skills )
+    loop over job_characteristics
+        try-find in the individuals_skills
+            if (found) add 1 to individuals_skills for the job_characteristics skills
+            <comment> for each individual, they will need a tally for each job_characteristic set
+    At the end of the loop, we can use the number of matches for each individual for each job_characteristic as a starting point of provide a figure for matching.  e.g. if match 2 out of 3 skills, then 66.66% match.
+    A nice to have would be to have a weighting for each job_characteristic, as this would give a better matching percentage.
+
+At the end of the searches, present the results.
+
+
+Assumptions:
+    won't be using full-matching because JobSpec "remote" is not exactly the same as "wants to work remote", so we can only do limited search.
+
+    Also, "flexible working hours" - would you say that matches "office based two days per week"?  This would need some sort of AI or machine learning to "map" these as potential matches.
