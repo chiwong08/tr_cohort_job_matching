@@ -1,0 +1,2 @@
+
+realised right at the end, that I should have use a vector of array of strings for both the job characteristics and the candidates skills.
